@@ -1,0 +1,396 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif; }
+
+.opened {
+  display: block !important; }
+  .opened ~ header {
+    filter: blur(1.5rem) !important; }
+
+.global header {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(243, 208, 104, 0.6)), url("/img/Background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .global header .textContent {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    transform: translate(0%, -20%);
+    padding-left: 0 !important; }
+    .global header .textContent h1 {
+      font-size: 10vmin;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 300; }
+    .global header .textContent span {
+      padding: 5px 10px;
+      font-size: .9em;
+      text-transform: uppercase;
+      font-weight: 400;
+      background: #f3d068;
+      color: #f36868;
+      transition: 500ms;
+      border-radius: 5px;
+      cursor: pointer; }
+      .global header .textContent span:hover {
+        color: #f3d068;
+        background: #f36868; }
+  .global header .navigationBar {
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .global header .navigationBar .hamburger {
+      outline: none;
+      background: #f36868; }
+    .global header .navigationBar nav span {
+      padding: 15px;
+      margin: auto;
+      background: #f3d068;
+      color: #f36868;
+      font-size: 20px;
+      position: absolute;
+      top: 0px;
+      left: 70px;
+      font-weight: 700;
+      transition: 500ms; }
+      .global header .navigationBar nav span:hover {
+        color: #f3d068;
+        background: #f36868; }
+  .global header .menu {
+    background: #f36868;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 9%;
+    left: 0;
+    text-align: center;
+    display: none;
+    transition: .5s; }
+    .global header .menu span {
+      cursor: pointer;
+      font-weight: 700;
+      position: absolute;
+      top: -45px;
+      left: 45%;
+      padding: 10px 20px 11px;
+      background: #f36868;
+      color: #f3d068;
+      transition: 500ms; }
+      .global header .menu span:hover {
+        background: #f3d068;
+        color: #f36868; }
+    .global header .menu .contentText {
+      margin: auto;
+      padding: 50px 0 0; }
+      .global header .menu .contentText h3 {
+        font-size: 50px;
+        padding: 0;
+        margin: 0;
+        font-weight: 300;
+        color: #f3d068; }
+      .global header .menu .contentText ul {
+        padding: 10px 0 0;
+        list-style: none; }
+        .global header .menu .contentText ul li {
+          padding: 10px 0; }
+          .global header .menu .contentText ul li a {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: .5s; }
+            .global header .menu .contentText ul li a:hover {
+              text-decoration: none;
+              color: #f3d068;
+              font-size: 16px;
+              transition: all .5s ease-in-out; }
+    .global header .menu .pub {
+      margin: 0 auto;
+      padding: 0 20px; }
+      .global header .menu .pub .cadre2 {
+        width: 100%;
+        height: 200px;
+        background: url("/img/coffee.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: contain; }
+        .global header .menu .pub .cadre2 img {
+          width: 100%;
+          display: none;
+          transition: .5s;
+          position: absolute;
+          left: 0; }
+        .global header .menu .pub .cadre2:hover {
+          transition: .5s;
+          background: transparent !important; }
+          .global header .menu .pub .cadre2:hover img {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            height: 200px; }
+.global .about {
+  height: 100vh;
+  margin: auto; }
+  .global .about .generate, .global .about .content {
+    height: 100%;
+    margin: auto; }
+    .global .about .generate .profil, .global .about .content .profil {
+      text-align: center;
+      margin: auto; }
+      .global .about .generate .profil img, .global .about .content .profil img {
+        width: 70%;
+        filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.6)); }
+    .global .about .generate .title, .global .about .content .title {
+      padding-top: 10%;
+      padding-bottom: 10%;
+      text-align: center;
+      margin: auto; }
+      .global .about .generate .title h1, .global .about .content .title h1 {
+        color: #231b1b;
+        font-size: 45px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif; }
+        .global .about .generate .title h1 span, .global .about .content .title h1 span {
+          font-weight: 300;
+          font-family: 'Quicksand','Roboto', sans-serif;
+          color: #f36868; }
+      .global .about .generate .title p, .global .about .content .title p {
+        margin-top: 10%;
+        font-size: 12px;
+        font-weight: 300;
+        color: #231b1b;
+        padding: 5px 20px; }
+      .global .about .generate .title button, .global .about .content .title button {
+        margin-top: 5%;
+        background: #f36868 !important;
+        border-color: #f36868 !important;
+        color: white !important;
+        font-size: 12px;
+        text-transform: uppercase;
+        transition: .5s; }
+        .global .about .generate .title button:hover, .global .about .content .title button:hover {
+          border-color: #f36868 !important;
+          background: white !important;
+          color: #f36868 !important; }
+.global .party {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 198, 29, 0.5), rgba(91, 91, 91, 0.7)), url("/img/celebrate.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2.1); }
+  .global .party .container, .global .party .row {
+    height: 100%; }
+    .global .party .container .content, .global .party .row .content {
+      width: 100%;
+      margin: auto; }
+      .global .party .container .content h1, .global .party .row .content h1 {
+        color: #231b1b;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif; }
+        .global .party .container .content h1 span, .global .party .row .content h1 span {
+          color: #f36868;
+          font-weight: 300; }
+        .global .party .container .content h1 sub, .global .party .row .content h1 sub {
+          font-size: 13px;
+          color: #f3d068; }
+      .global .party .container .content p, .global .party .row .content p {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.7); }
+      .global .party .container .content p:hover,
+      .global .party .container .content p:active,
+      .global .party .container .content p:focus, .global .party .row .content p:hover,
+      .global .party .row .content p:active,
+      .global .party .row .content p:focus {
+        color: white; }
+      .global .party .container .content .play, .global .party .row .content .play {
+        margin: 0 auto;
+        text-transform: uppercase;
+        padding: 10px 0 0px; }
+        .global .party .container .content .play #demo, .global .party .row .content .play #demo {
+          color: rgba(255, 255, 255, 0.7);
+          font-weight: 300;
+          font-size: 30px;
+          transition: .3s; }
+          .global .party .container .content .play #demo:hover, .global .party .row .content .play #demo:hover {
+            color: white;
+            font-weight: 300; }
+      .global .party .container .content button:focus,
+      .global .party .container .content button:active, .global .party .row .content button:focus,
+      .global .party .row .content button:active {
+        box-shadow: 0 0 0 0.2rem rgba(243, 104, 104, 0); }
+      .global .party .container .content button, .global .party .row .content button {
+        margin: 15px auto 0;
+        background: #f36868 !important;
+        border-color: #f36868;
+        color: white;
+        text-transform: capitalize;
+        padding: 8px 40px;
+        font-size: 12px;
+        transition: .5s;
+        bottom: 0; }
+        .global .party .container .content button:hover, .global .party .row .content button:hover {
+          background: #f3d068 !important;
+          border: 1px solid #fff; }
+.global .menuOwn {
+  margin: auto;
+  background: #fff;
+  height: 100%;
+  position: relative; }
+  .global .menuOwn #postsCarousel {
+    width: 100%;
+    margin: auto;
+    /* equal card height */
+    /* ensure equal card height inside carousel */
+    /* prevent flicker during transition */
+    /* control image height */ }
+    .global .menuOwn #postsCarousel .controlls {
+      margin: 0 auto; }
+      .global .menuOwn #postsCarousel .controlls .content-arrow {
+        margin: auto;
+        text-align: center; }
+        .global .menuOwn #postsCarousel .controlls .content-arrow .lead {
+          margin: 20px auto;
+          text-align: center; }
+          .global .menuOwn #postsCarousel .controlls .content-arrow .lead .btn {
+            margin: 0 20px;
+            transition: .5s;
+            border: 1px solid #f3d068 !important; }
+            .global .menuOwn #postsCarousel .controlls .content-arrow .lead .btn i {
+              color: #f36868; }
+            .global .menuOwn #postsCarousel .controlls .content-arrow .lead .btn:hover {
+              border: 1px solid #f36868 !important;
+              background: #fff !important; }
+              .global .menuOwn #postsCarousel .controlls .content-arrow .lead .btn:hover i {
+                color: #f3d068 !important; }
+          .global .menuOwn #postsCarousel .controlls .content-arrow .lead .btn:focus,
+          .global .menuOwn #postsCarousel .controlls .content-arrow .lead .btn:active,
+          .global .menuOwn #postsCarousel .controlls .content-arrow .lead .btn:visited {
+            box-shadow: none; }
+    .global .menuOwn #postsCarousel .content-menu .carousel-item {
+      padding: 0 !important;
+      margin: 0 !important; }
+    .global .menuOwn #postsCarousel .content-menu .card {
+      border: none !important;
+      text-align: center; }
+      .global .menuOwn #postsCarousel .content-menu .card .card-img-top img {
+        max-width: 275px; }
+      .global .menuOwn #postsCarousel .content-menu .card .card-block {
+        padding: 10px 0; }
+        .global .menuOwn #postsCarousel .content-menu .card .card-block h6 {
+          font-size: 12px;
+          color: #f36868;
+          font-weight: 300; }
+        .global .menuOwn #postsCarousel .content-menu .card .card-block h2 a {
+          transition: .5s ease-in-out;
+          color: #f3d068;
+          font-size: 25px;
+          text-transform: uppercase;
+          font-family: 'Roboto', sans-serif; }
+          .global .menuOwn #postsCarousel .content-menu .card .card-block h2 a:hover {
+            color: #f36868;
+            text-decoration: none; }
+        .global .menuOwn #postsCarousel .content-menu .card .card-block span {
+          text-align: center;
+          font-weight: 300;
+          font-size: 15px;
+          color: #232323;
+          text-transform: uppercase; }
+          .global .menuOwn #postsCarousel .content-menu .card .card-block span b {
+            font-weight: 700;
+            font-size: 12px; }
+    .global .menuOwn #postsCarousel .row-equal > div[class*='col-'] {
+      display: flex;
+      flex: 1 0 auto; }
+    .global .menuOwn #postsCarousel .row-equal .card {
+      width: 100%; }
+    .global .menuOwn #postsCarousel .carousel-inner > .row-equal.active,
+    .global .menuOwn #postsCarousel .carousel-inner > .row-equal.next,
+    .global .menuOwn #postsCarousel .carousel-inner > .row-equal.prev {
+      display: flex; }
+    .global .menuOwn #postsCarousel .carousel-inner > .row-equal.active.left,
+    .global .menuOwn #postsCarousel .carousel-inner > .row-equal.active.right {
+      opacity: 0.5;
+      display: flex; }
+    .global .menuOwn #postsCarousel .card-img-top-250 {
+      overflow: hidden; }
+  .global .menuOwn .lacarte {
+    padding: 20px 0; }
+    .global .menuOwn .lacarte .btn {
+      background: #f36868 !important;
+      border: 1px solid #f36868 !important;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 300;
+      transition: .3s; }
+      .global .menuOwn .lacarte .btn:hover {
+        background: #f3d068 !important;
+        border: 1px solid #f3d068 !important; }
+.global footer {
+  height: 100%;
+  width: 100%; }
+  .global footer .content {
+    margin: 0 auto;
+    background: #f3d068; }
+    .global footer .content .logo {
+      padding: 18px 15px 18px 15px;
+      text-align: center;
+      margin: auto; }
+      .global footer .content .logo a {
+        text-decoration: none; }
+        .global footer .content .logo a:hover {
+          text-decoration: none; }
+        .global footer .content .logo a span {
+          color: #f3d068;
+          padding: 20px;
+          background: #f36868;
+          font-weight: 700;
+          letter-spacing: 1px;
+          transition: .5s; }
+          .global footer .content .logo a span:hover {
+            background: #f3d068;
+            color: #f36868; }
+    .global footer .content .title {
+      display: inline;
+      text-align: center;
+      margin: auto;
+      padding: 10px 0 20px 0; }
+      .global footer .content .title ul {
+        display: inline;
+        list-style: none; }
+        .global footer .content .title ul li {
+          padding: 0 10px;
+          display: inline;
+          text-transform: uppercase;
+          font-size: 12px; }
+          .global footer .content .title ul li a {
+            color: #fff;
+            font-weight: 400;
+            font-size: 12px;
+            transition: .5s; }
+            .global footer .content .title ul li a:hover {
+              text-decoration: none;
+              color: #f36868; }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .menuOwn #postsCarousel {
+    width: auto; }
+    .menuOwn #postsCarousel .content-menu .card .card-img-top img {
+      width: 200px !important; } }
+
+/*# sourceMappingURL=main.css.map */
