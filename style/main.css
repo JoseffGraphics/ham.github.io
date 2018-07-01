@@ -14,7 +14,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(243, 208, 104, 0.6)), url("/img/Background.jpeg");
+  background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(243, 208, 104, 0.6)), url("../img/Background.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
